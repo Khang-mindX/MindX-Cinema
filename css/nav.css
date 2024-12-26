@@ -1,0 +1,31 @@
+.red {
+    color: red;
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    background: transparent;
+    justify-content: space-between;
+    padding: 10px 5px;
+    position: fixed;    
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: 900;
+}
+
+.buttons {
+    display: flex;
+    justify-content: right;
+    gap: 10px;
+    margin-right: 10px;
+}
+
+.buttons button {
+    font-size: 25px;
+    border: none;
+    outline: none;
+    background: transparent;
+}
