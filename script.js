@@ -13,5 +13,5 @@ window.addEventListener("scroll", () => {
 const login = document.querySelector("#login");
 
 login.addEventListener("click", () => {
-  window.location.href = "login.html";
+  window.location.href = "./login.html";
 })
