@@ -1,2 +1,2 @@
-# mindx cinema
+# MindX cinema
  

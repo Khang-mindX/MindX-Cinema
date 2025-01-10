@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MindX Cinema</title>
+    <title>MindX Cinema - Signup</title>
     <!--bootstrap css-->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
@@ -43,20 +43,33 @@
 
     <!-- main -->
     <main>
-      <div id="films-container"></div>
+      <div>
+        <h1>Signup</h1>
+        <form id="signupForm" action="./index.html" method="POST">
+          <label for="username" class="form-label">Username:</label><br>
+          <input type="text" class="form" id="user" /><br>
+          <label for="email" class="form-label">Email:</label><br>
+          <input type="email" class="form" id="email" /><br>
+          <label for="password" class="form-label">Password:</label><br>
+          <input type="password" class="form" id="pword" /><br>
+          <label for="verifyPassword" class="form-label">Verify Password:</label><br>
+          <input type="password" class="form" id="vpword" /><br>
+          <button type="submit" class="btn btn-primary">Signup</button>
+        </form>
+        <p>Already have an account? <a href="./login.html">Login here</a></p>
+        <!-- footer -->
+        <footer></footer>
+
+        <!-- bootstrap js -->
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+          crossorigin="anonymous"
+        ></script>
+
+        <!-- my js -->
+        <script src="./scripts/signup.js"></script>
+      </div>
     </main>
-
-    <!-- footer -->
-    <footer></footer>
-
-    <!-- bootstrap js -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
-
-    <!-- my js -->
-    <script src="./scripts/index.js"></script>
   </body>
 </html>

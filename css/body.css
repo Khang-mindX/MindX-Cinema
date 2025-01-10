@@ -8,3 +8,17 @@ body {
   font-family: segoe "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: white;
 }
+
+.film {
+  background-color: #333;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.film img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
