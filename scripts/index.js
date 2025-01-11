@@ -12,6 +12,7 @@ window.addEventListener("scroll", () => {
 
 async function fetchFilms() {
   try {
+    const apiURL = "https://www.omdbapi.com/?i=tt3896198&apikey=d3ddc01b&s=title"
     const response = await fetch(apiURL);
     const films = await response.json();
     displayFilms(films);
@@ -19,14 +20,3 @@ async function fetchFilms() {
     console.error("Error fetching films:", error);
   }
 }
-
-function displayFilms(films) {
-  const main = document.querySelector("#films-container");
-  const apiURL = "https://www.omdbapi.com/?i=tt3896198&apikey=d3ddc01b&s=title"; 
-  fetch(url)
-    .then((response) => response.json())
-    .then((data) => console.log(data))
-    .catch((error) => console.log(error))
-}
-
-document.addEventListener("DOMContentLoaded", fetchFilms);
